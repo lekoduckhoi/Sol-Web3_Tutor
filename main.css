@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgb(253, 224, 229);
+}
+h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4vh;
+}
+.left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.right {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.right input {
+    font-size: 3vh;
+}
+.right label {
+    font-size: 4vh;
+}
+.right button {
+    color: white;
+    background-color: #7B68EE;
+    border: 0.11904761904761904vh solid gray;
+    border-radius: 2vh;
+    font-size: 4vh;
+    padding: 1vh;
+}
+button:hover {
+    background-color: rgb(86, 200, 245);
+}
+h2 {
+    font-size: 4vh;
+    color: purple;
+}
