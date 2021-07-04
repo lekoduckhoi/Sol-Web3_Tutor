@@ -343,38 +343,38 @@
 	})
 	
 	function startApp() {
-		$("#mainacc").html(accounts[0])
-		web3.eth.getBalance(accounts[0], function(error, result) {
-			$("#ethbal").html(result)
-		})
-		contract.methods.balanceOf(accounts[0]).call((err, result) => {
-			$("#tokenbal").html(result)
-		})
-		contract.methods.TotalSupply().call((err, result) => {
-			$("#supply").html(result)
-		})
-		contract.methods.balanceOf(accounts[0]).call((err, result) => {
-			$("#tokenbal").html(result)
-		})
+		// $("#mainacc").html(accounts[0])
+		// web3.eth.getBalance(accounts[0], function(error, result) {
+		// 	$("#ethbal").html(result)
+		// })
+		// contract.methods.balanceOf(accounts[0]).call((err, result) => {
+		// 	$("#tokenbal").html(result)
+		// })
+		// contract.methods.TotalSupply().call((err, result) => {
+		// 	$("#supply").html(result)
+		// })
+		// contract.methods.balanceOf(accounts[0]).call((err, result) => {
+		// 	$("#tokenbal").html(result)
+		// })
 	}
-	$("#transfer").click(function() {
-		var amount = web3.utils.toWei($("#transferamount").val(), "ether")
-		var to = $("#transferto").val()
-		contract.methods.transfer(to, amount)
-		.send({from: accounts[0]})
-	})
-	$("#approve").click(function() {
-		var amount = web3.utils.toWei($("#approveamount").val(), "ether")
-		var spender = $("#approveto").val()
-		contract.methods.approve(spender, amount)
-		.send({from: accounts[0]})
-	})
-	$("#transferfrom").click(function() {
-		var amount = web3.utils.toWei($("#transferfromamount").val(), "ether")
-		var from = $("#transferfromfrom").val()
-		var to = $("#transferfromto").val()
-		contract.methods.transferFrom(from, to, amount)
-		.send({from: accounts[0]})
-	})
+	// $("#transfer").click(function() {
+	// 	var amount = web3.utils.toWei($("#transferamount").val(), "ether")
+	// 	var to = $("#transferto").val()
+	// 	contract.methods.transfer(to, amount)
+	// 	.send({from: accounts[0]})
+	// })
+	// $("#approve").click(function() {
+	// 	var amount = web3.utils.toWei($("#approveamount").val(), "ether")
+	// 	var spender = $("#approveto").val()
+	// 	contract.methods.approve(spender, amount)
+	// 	.send({from: accounts[0]})
+	// })
+	// $("#transferfrom").click(function() {
+	// 	var amount = web3.utils.toWei($("#transferfromamount").val(), "ether")
+	// 	var from = $("#transferfromfrom").val()
+	// 	var to = $("#transferfromto").val()
+	// 	contract.methods.transferFrom(from, to, amount)
+	// 	.send({from: accounts[0]})
+	// })
 	
 </script>
